@@ -47,8 +47,17 @@ input,select{
   font-family: monospace;
 }
 
+input{
+  background-color: lightgreen;
+  border: none;
+}
+
 input:disabled{
   background-color: rgb(255, 27, 27);
+}
+
+input:disabled::placeholder{
+  visibility: hidden;
 }
 
 div{

@@ -1,0 +1,60 @@
+body{
+  color: black;
+  font-family: monospace;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.title{
+  margin-left: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+label{
+  display: block;
+  margin-left: 20px;
+}
+
+button{
+  display: block;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 18px;
+  padding: 8px 15px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all .5s;
+  font-family: monospace;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+select{
+  cursor: pointer;
+}
+
+input,select{
+  margin-top: 8px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 20px;
+  font-family: monospace;
+}
+
+input:disabled{
+  background-color: rgb(255, 27, 27);
+}
+
+div{
+  width: fit-content;
+  margin-top: 20px;
+  background-color: rgba(128, 128, 128, 0.24);
+  border-radius: 20px;
+  padding: 20px;
+}

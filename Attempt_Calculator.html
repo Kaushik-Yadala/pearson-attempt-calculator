@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Pearson Attempt Calculator</title>
+    <link rel="stylesheet" href="Attempt_Calculator.css">
+  </head>
+
+  <body>
+    <p class="title">Pearson Attempt Calculator(Physics)</p>
+
+    <form>
+
+      <label for="typeQuestion">Choose Question Type:</label>
+      <select name="QuestionTypes" id="typeQuestion" onchange="enableFields()">
+        <option value="trueorfalse">True or False</option>
+        <option value="MCQ1ans">MCQ with 1 possible answer</option>
+        <option value="FRQ">FRQ</option>
+      </select>
+
+      <label for="numParts" >Number of Parts:</label>
+      <input type="number" id="numParts" disabled>
+
+      <label for="numChoices">Number of Choices:</label>
+      <input type="number" id="numChoices" disabled>
+
+      <button type="button" onclick="calculate()">Calculate!</button>
+
+    </form>
+
+    <div id="division">
+      <p id="parts"></p>
+      <p id="attempts-per-part"></p>
+      <p id="attempts-per-frq"></p>
+      <p id="percent-lost"></p>
+    </div>
+
+    <script src="Attempt_Calculator.js"></script>
+  </body>
+
+</html>
